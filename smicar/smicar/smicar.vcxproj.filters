@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="MEM">
+      <UniqueIdentifier>{7368c283-cb21-4489-9f48-3fac2127d9e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBG">
+      <UniqueIdentifier>{1fc17585-5d74-4da7-b115-19f049b80d06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\create.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\error.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\error_message_not_gcc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\eval.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\execute.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\heap.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\interface.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\lex.yy.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\native.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\string.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\util.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\y.tab.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\memory\memory.c">
+      <Filter>MEM</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\memory\storage.c">
+      <Filter>MEM</Filter>
+    </ClCompile>
+    <ClCompile Include="inter\debug\debug.c">
+      <Filter>DBG</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inter\DBG.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inter\MEM.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inter\y.tab.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inter\sim.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inter\sim_dev.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inter\simcar.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inter\crowbar.l">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="inter\crowbar.y">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>
