@@ -97,5 +97,11 @@
     <None Include="inter\crowbar.y">
       <Filter>源文件</Filter>
     </None>
+    <None Include="array.crb">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="input.txt">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

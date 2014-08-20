@@ -1,0 +1,32 @@
+﻿生成启动时间为 2014/8/17 14:35:18。
+     1>项目“L:\learning\源码学习\SCS-1.0.1\build\VS2010\scs\scs.vcxproj”在节点 2 上(build 个目标)。
+     1>PrepareForBuild:
+         正在创建目录“L:\learning\源码学习\SCS-1.0.1\build\VS2010\Release\”。
+       InitializeBuildStatus:
+         正在创建“Release\scs.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\app\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"L:\learning\源码学习\SCS-1.0.1\build\VS2010\..\include" /I"L:\learning\源码学习\SCS-1.0.1\build\VS2010\..\..\scs\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D dDOUBLE /D _USE_MATH_DEFINES /D FREEGLUT_STATIC /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /wd4996 /analyze- /errorReport:prompt ..\..\..\scs\src\api.cpp ..\..\..\scs\src\car.cpp ..\..\..\scs\src\draw.cpp ..\..\..\scs\src\simulation.cpp ..\..\..\scs\src\track.cpp ..\..\..\scs\src\ui.cpp ..\..\..\scs\src\vector.cpp
+         api.cpp
+         car.cpp
+         draw.cpp
+         simulation.cpp
+         track.cpp
+         ui.cpp
+         vector.cpp
+       Lib:
+         D:\app\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"L:\learning\源码学习\SCS-1.0.1\build\VS2010\Release\scs.lib" /NOLOGO /LTCG Release\api.obj
+         Release\car.obj
+         Release\draw.obj
+         Release\simulation.obj
+         Release\track.obj
+         Release\ui.obj
+         Release\vector.obj
+         scs.vcxproj -> L:\learning\源码学习\SCS-1.0.1\build\VS2010\Release\scs.lib
+       FinalizeBuildStatus:
+         正在删除文件“Release\scs.unsuccessfulbuild”。
+         正在对“Release\scs.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“L:\learning\源码学习\SCS-1.0.1\build\VS2010\scs\scs.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.33

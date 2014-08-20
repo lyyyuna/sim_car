@@ -90,6 +90,8 @@
     <ClInclude Include="inter\y.tab.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="array.crb" />
+    <None Include="input.txt" />
     <None Include="inter\crowbar.l" />
     <None Include="inter\crowbar.y" />
   </ItemGroup>

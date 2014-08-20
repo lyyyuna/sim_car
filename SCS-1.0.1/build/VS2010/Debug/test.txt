@@ -1,0 +1,8 @@
+left = getLeft();
+right = getRight();
+speed = getSpeed();
+
+dir = (right - left) * 5;
+setServo(dir);
+voltage = (1.0 - speed )*10.0 + 10.0;
+setMotor(voltage);

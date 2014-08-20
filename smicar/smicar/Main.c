@@ -2,6 +2,7 @@
 #include "SIM.h"
 #include "MEM.h"
 
+
 int
 main(int argc, char **argv)
 {
@@ -24,7 +25,7 @@ main(int argc, char **argv)
     SIMCAR_interpret(interpreter);
     SIMCAR_dispose_interpreter(interpreter);
 
-    MEM_dump_blocks(stdout);
+    //MEM_dump_blocks(stdout);
 	//*/
 
 

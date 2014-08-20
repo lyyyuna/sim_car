@@ -494,6 +494,22 @@ SIMCAR_Value crb_nv_fputs_proc(SIMCAR_Interpreter *interpreter,
 SIMCAR_Value crb_nv_new_array_proc(SIMCAR_Interpreter *interpreter,
                                 SIMCAR_LocalEnvironment *env,
                                 int arg_count, SIMCAR_Value *args);
+//////////////////////////////////////////////
+SIMCAR_Value crb_nv_get_left_proc(SIMCAR_Interpreter *interpreter,
+                                SIMCAR_LocalEnvironment *env,
+                                int arg_count, SIMCAR_Value *args);
+SIMCAR_Value crb_nv_get_right_proc(SIMCAR_Interpreter *interpreter,
+                                SIMCAR_LocalEnvironment *env,
+                                int arg_count, SIMCAR_Value *args);
+SIMCAR_Value crb_nv_set_servo_proc(SIMCAR_Interpreter *interpreter,
+                                SIMCAR_LocalEnvironment *env,
+                                int arg_count, SIMCAR_Value *args);
+SIMCAR_Value crb_nv_set_motor_proc(SIMCAR_Interpreter *interpreter,
+                                SIMCAR_LocalEnvironment *env,
+                                int arg_count, SIMCAR_Value *args);
+SIMCAR_Value crb_nv_get_speed_proc(SIMCAR_Interpreter *interpreter,
+                                SIMCAR_LocalEnvironment *env,
+                                int arg_count, SIMCAR_Value *args);
 void crb_add_std_fp(SIMCAR_Interpreter *inter);
 
 

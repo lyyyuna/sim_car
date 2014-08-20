@@ -12,6 +12,11 @@ add_native_functions(SIMCAR_Interpreter *inter)
     SIMCAR_add_native_function(inter, "fgets", crb_nv_fgets_proc);
     SIMCAR_add_native_function(inter, "fputs", crb_nv_fputs_proc);
     SIMCAR_add_native_function(inter, "new_array", crb_nv_new_array_proc);
+	SIMCAR_add_native_function(inter, "getLeft", crb_nv_get_left_proc);
+	SIMCAR_add_native_function(inter, "getRight", crb_nv_get_right_proc);
+	SIMCAR_add_native_function(inter, "getSpeed", crb_nv_get_speed_proc);
+	SIMCAR_add_native_function(inter, "setServo", crb_nv_set_servo_proc);
+	SIMCAR_add_native_function(inter, "setMotor", crb_nv_set_motor_proc);
 }
 
 SIMCAR_Interpreter *

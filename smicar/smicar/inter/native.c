@@ -232,3 +232,101 @@ crb_nv_new_array_proc(SIMCAR_Interpreter *interpreter,
     return value;
 
 }
+
+////////////////////////////////////////////////////////////////
+SIMCAR_Value
+crb_nv_get_left_proc(SIMCAR_Interpreter *interpreter,
+                      SIMCAR_LocalEnvironment *env,
+                      int arg_count, SIMCAR_Value *args)
+{
+    SIMCAR_Value value;
+	FILE *fp;
+	double x = 0;
+
+	fp = fopen("input.txt", "r");
+	fscanf(fp, "%lf", &x);
+	value.type = SIMCAR_DOUBLE_VALUE;
+	value.u.double_value = x;
+
+	fclose(fp);
+    return value;
+
+}
+
+SIMCAR_Value
+crb_nv_get_right_proc(SIMCAR_Interpreter *interpreter,
+                      SIMCAR_LocalEnvironment *env,
+                      int arg_count, SIMCAR_Value *args)
+{
+    SIMCAR_Value value;
+	FILE *fp;
+	double x = 0, y = 0;
+
+	fp = fopen("input.txt", "r");
+	fscanf(fp, "%lf%lf", &x, &y);
+	value.type = SIMCAR_DOUBLE_VALUE;
+	value.u.double_value = y;
+	
+	fclose(fp);
+    return value;
+
+}
+
+SIMCAR_Value
+crb_nv_get_speed_proc(SIMCAR_Interpreter *interpreter,
+                      SIMCAR_LocalEnvironment *env,
+                      int arg_count, SIMCAR_Value *args)
+{
+    SIMCAR_Value value;
+	FILE *fp;
+	double x = 0, y = 0, speed;
+
+	fp = fopen("input.txt", "r");
+	fscanf(fp, "%lf%lf%lf", &x, &y, &speed);
+	value.type = SIMCAR_DOUBLE_VALUE;
+	value.u.double_value = speed;
+	
+	fclose(fp);
+    return value;
+
+}
+
+SIMCAR_Value
+crb_nv_set_servo_proc(SIMCAR_Interpreter *interpreter,
+                      SIMCAR_LocalEnvironment *env,
+                      int arg_count, SIMCAR_Value *args)
+{
+    SIMCAR_Value value;
+	FILE *fp;
+	int dir;
+
+	value.type = SIMCAR_NULL_VALUE;
+	fp = fopen("output1.txt", "w");
+	
+	dir = args[0].u.double_value;
+	fprintf(fp, "%d", dir);
+
+	fclose(fp);
+	
+	return value;
+}
+
+SIMCAR_Value
+crb_nv_set_motor_proc(SIMCAR_Interpreter *interpreter,
+                      SIMCAR_LocalEnvironment *env,
+                      int arg_count, SIMCAR_Value *args)
+{
+    SIMCAR_Value value;
+	FILE *fp;
+	int voltage;
+
+	value.type = SIMCAR_NULL_VALUE;
+	fp = fopen("output2.txt", "w");
+	
+	voltage = args[0].u.double_value;
+	fprintf(fp, "%d", voltage);
+
+	fclose(fp);
+	
+	return value;
+}

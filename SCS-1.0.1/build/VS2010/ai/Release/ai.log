@@ -1,0 +1,13 @@
+﻿生成启动时间为 2014/8/19 19:44:09。
+     1>项目“L:\learning\源码学习\SCS-1.0.1\build\VS2010\ai\ai.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Release\ai.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\app\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"L:\learning\源码学习\SCS-1.0.1\build\VS2010\..\include" /I"L:\learning\源码学习\SCS-1.0.1\build\VS2010\..\..\ai\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D FREEGLUT_STATIC /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\ai\src\main.cpp
+         main.cpp
+     1>..\..\..\ai\src\main.cpp(5): fatal error C1083: 无法打开包括文件:“sim.h”: No such file or directory
+     1>已完成生成项目“L:\learning\源码学习\SCS-1.0.1\build\VS2010\ai\ai.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.52

@@ -1,0 +1,8 @@
+print("\n");
+a = getLeft();
+b = getRight();
+print(a);
+print("\n");
+print(b);
+setServo(13);
+print("\n");
